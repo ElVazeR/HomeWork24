@@ -27,7 +27,7 @@ void resize_arr(T*& arr, int& length, int new_length) {
 		return;
 	}
 	T* tmp = new T[new_length];
-	for (int i = 0; i < new_length; i++)
+	for (int i = 0; i < length; i++)
 		tmp[i] = arr[i];
 	delete[] arr;
 	arr = tmp;
